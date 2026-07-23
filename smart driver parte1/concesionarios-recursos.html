@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Driver - Recursos</title>
+
+    <link rel="stylesheet" href="concesionarios-recursos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+
+</head>
+
+<body>
+
+    <!-- ===================== -->
+    <!-- ENCABEZADO (HEADER) -->
+    <!-- Contiene el logo y el menú de navegación -->
+    <!-- ===================== -->
+
+    <header>
+    <nav>
+
+        <div class="logo">
+            <img src="img/SMART_DRIVER__3_-removebg-preview.png" alt="Logo">
+            <h2>SMARTDRIVER</h2>
+        </div>
+
+        <div class="menu">
+
+            <a id="navInicio" href="welcome.html">INICIO</a>
+            <a id="navCatalogo" href="catalogo.html">CATÁLOGO</a>
+            <a id="navRecursos" href="Recursos.html" class="activo">RECURSOS</a>
+            <a id="navContacto" href="#contacto">CONTACTO</a>
+
+            <button id="idiomaBtnEs" class="idioma-btn">
+                <img src="img/ESP.png" alt="Español">
+            </button>
+
+            <button id="idiomaBtnEN" class="idioma-btn">
+                <img src="img/UK.png" alt="English">
+            </button>
+
+        </div>
+
+    </nav>
+</header>
+
+    <!-- ===================== -->
+    <!-- BANNER PRINCIPAL -->
+    <!-- Imagen con el título de la página -->
+    <!-- ===================== -->
+
+    <section class="banner">
+
+        <div class="banner-texto">
+
+            <img src="img/icono.png">
+
+            <div>
+
+                <h1>CONCESIONARIOS EN PANAMÁ</h1>
+
+                <p>Encuentra concesionarios cerca de ti</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===================== -->
+    <!-- BARRA DE BÚSQUEDA -->
+    <!-- Ubicación + buscador + botón de ubicación -->
+    <!-- ===================== -->
+
+    <section class="busqueda">
+
+        <button class="ubicacion">
+
+             Ciudad de David, Chiriquí
+
+        </button>
+
+        <div class="search">
+
+<input
+        id="busqueda"
+        type="text"
+        placeholder="Buscar por nombre de taller">
+
+
+            <button></button>
+
+        </div>
+
+        <button class="miubicacion">
+
+            MI UBICACIÓN
+
+        </button>
+
+    </section>
+
+
+
+    <!-- ===================== -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <!-- Filtros y mapa -->
+    <!-- ===================== -->
+
+    <section class="contenedor">
+
+       
+        <aside class="filtros">
+
+            <h2>Servicios</h2>
+
+            <label><input type="checkbox"> Toyota</label>
+
+            <label><input type="checkbox"> Hyundai</label>
+
+            <label><input type="checkbox"> Kia</label>
+
+            <label><input type="checkbox"> Ford</label>
+
+            <h2>Horario de Atención</h2>
+
+            <label><input type="checkbox"> Abierto ahora</label>
+
+            <label><input type="checkbox"> 24 Horas</label>
+
+        </aside>
+
+
+        <!-- Mapa de Google -->
+        <div class="mapa">
+
+            <iframe src="https://www.google.com/maps?q=David,Panama&output=embed"></iframe>
+
+        </div>
+
+    </section>
+
+   
+    <!-- LISTA DE CONCESIONARIOS -->
+    
+
+<section class="lista-concesionarios">
+
+    <!-- Filtros -->
+    <aside class="filtro-calificacion">
+
+        <h2>Calificación Mínima</h2>
+
+        <label><input type="checkbox" class="rating-filter" value="5"><span>★★★★★</span></label>
+
+        <label><input type="checkbox" class="rating-filter" value="4"><span>★★★★</span></label>
+
+        <label><input type="checkbox" class="rating-filter" value="3"><span>★★★</span></label>
+
+        <label><input type="checkbox" class="rating-filter" value="2"><span>★★</span></label>
+
+        <label><input type="checkbox" class="rating-filter" value="1"><span>★</span></label>
+
+        <button id="limpiarFiltros">
+            Limpiar Filtros
+        </button>
+
+    </aside>
+
+
+    <!-- Tarjetas -->
+
+    <div class="concesionarios">
+
+        <!-- Taller 1 -->
+
+        <div class="card-concesionario" data-rating="4.3">
+
+            <img src="img/concesionario1.jpg" alt="">
+
+            <div class="info">
+
+                <h2>Autostar David Chiriquí</h2>
+
+                <div class="rating">
+
+                    <span>(4.4)</span>
+
+                    <span class="estrellas">★★★★☆</span>
+
+                    <span>(5.0)</span>
+
+                </div>
+
+                <p>Concesionario</p>
+
+                <p> C.F Sur, David, Provincia de Chiriquí</p>
+
+                <h3>Abierto las 24 horas</h3>
+
+            </div>
+
+        </div>
+
+
+        <!-- Taller 2 -->
+
+        <div class="card-concesionario" data-rating="4.9">
+
+            <img src="img/concesionario2.jpg" alt="">
+
+            <div class="info">
+
+                <h2>Asia Motors-David</h2>
+
+                <div class="rating">
+
+                    <span>(4.9)</span>
+
+                    <span class="estrellas">★★★★☆</span>
+
+                    <span>(5.0)</span>
+
+                </div>
+
+                <p>Concesionario</p>
+
+                <p> Diagonal a, Vía Boquete,David, Provincia de Chiriquí</p>
+
+                <h3>Abierto • Cierra a las 6PM</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section class="contacto" id="contacto">
+
+        <div class="contacto-contenido">
+
+            <h2 id="tituloContacto">CONTACTO</h2>
+
+            <p id="textoContacto">
+                ¿Tienes preguntas o deseas más información sobre nuestros
+                vehículos y servicios?
+            </p>
+
+            <div class="contacto-info">
+
+                <div class="contacto-item">
+                    <h3 id="direccion">📍 Dirección</h3>
+                    <p>Ciudad de Panamá, Panamá</p>
+                </div>
+
+                <div class="contacto-item">
+                    <h3 id="telefono">📞 Teléfono</h3>
+                    <p>+507 6000-0000</p>
+                </div>
+
+                <div class="contacto-item">
+                    <h3 id="correo">✉️ Correo</h3>
+                    <p>info@smartdriver.com</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="concesionarios-recursos.js"></script>
+
+</body>
+
+</html>

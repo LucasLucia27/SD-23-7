@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Driver</title>
+
+    <link rel="stylesheet" href="catalogodeportivo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+</head>
+<body>
+    <!-- =====================
+         HEADER
+    ====================== -->
+
+    <header>
+
+        <div class="logo">
+            <img src="img/SMART_DRIVER__3_-removebg-preview.png" alt="Smart Driver">
+            <h1>SMARTDRIVER</h1>
+        </div>
+
+        <nav class="menu">
+            <a id="navInicio" href="welcome.html" class="page-link">INICIO</a>
+            <a id="navCatalogo" href="#catalogo.html" class="page-link">CATÁLOGO</a>
+            <a id="navRecursos" href="Recursos.html" class="page-link">RECURSOS</a>
+            <a id="navContacto" href="contacto.html" class="page-link">CONTACTO</a>
+        <button id="idiomaBtnEs" class="idioma-btn">
+            <img src="img/ESP.png"  alt="Español">
+        </button>
+        <button id="idiomaBtnEN" class="idioma-btn">
+            <img src="img/UK.png" alt="English">
+        </button>
+        </nav>
+    </header>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="catalogo">
+        <h2 id="Exploralosvehículos" class="titulo-catalogo">Explora los Vehículos</h2>
+
+        <div class="categorias">
+            <a id="autosElectricos" href="catalogoelectricos.html" class="seleccionado">Autos Eléctricos</a>
+            <a id="AutosDeportivos" href="Catalogodeportivo.html" class="seleccionado">Autos Deportivos</a>
+            <a id="Camionetas" href="catalogo.html" >Camionetas</a>
+        </div>
+
+        <div class="linea"></div>
+
+        <section class="tarjetas">
+            <article class="tarjeta">
+                <img src="img/toyota SUPRA.png" alt="Toyota GR Supra">
+                <div class="info">
+                    <span class="año">2026</span>
+                    <h3 id="Toyota GR Supra">Toyota GR Supra</h3>
+                    <p id="Hecha">Conduce en el mundo impulsado por adrenalina del GR Supra</p>
+                    <span class="precio">$58,300</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explorar" href="#" class="btn">Explorar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/911 turbo.png" alt="Porsche 911 Turbo S">
+                <div class="info">
+                    <span class="año">2027</span>
+                    <h3>Porsche 911 Turbo S</h3>
+                    <p id="Equipada">Un deportivo de lujo reconocido por su velocidad, precisión y comodidad para el uso diario</p>
+                    <span class="precio">$352.000</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explora2" href="explorar_porsche.html" class="btn">Explorar ></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/nissan1.png" alt="Nissan Z">
+                <div class="info">
+                    <span class="año">2026</span>
+                    <h3 id="Nissan Z">Nissan Z</h3>
+                    <p id="Hecha2">Un potente motor V6 biturbo en la parte delantera y una transmisión manual estándar en la parte central</p>
+                    <span class="precio">$42,970</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explorar3" href="#" class="btn">Explorar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/ferrari 296.jpeg" alt="Ferrari 296 GTB">
+                <div class="info">
+                    <span class="año">2024</span>
+                    <h3 id="Ferrari 296 GTB">Ferrari 296 GTB</h3>
+                    <p id="Equipada2">Un superdeportivo híbrido que combina un diseño elegante con una aceleración impresionante y tecnología de última generación</p>
+                    <span class="precio">$334,985</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explora4" href="#" class="btn">Explorar ></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="transition-overlay"></div>
+    <script src="catalogodeportivo.js"></script>
+</body>
+</html>

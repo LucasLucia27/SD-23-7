@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Catalogo.css">
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+    <title>Catálogo</title>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+
+    <header>
+        <div class="logo">
+            <img src="img/SMART_DRIVER__3_-removebg-preview.png" alt="Smart Driver">
+            <h1 id="titulo-catalogo">SMARTDRIVER</h1>
+        </div>
+
+        <nav class="menu">
+            <a id="navInicio" href="welcome.html" class="page-link">INICIO</a>
+            <a id="navCatalogo" href="catalogo.html" class="page-link">CATÁLOGO</a>
+            <a id="navRecursos" href="Recursos.html" class="page-link">RECURSOS</a>
+            <a id="navContacto" href="#contacto" class="page-link">CONTACTO</a>
+            <button id="idiomaBtnEs" class="idioma-btn">
+                <img src="img/ESP.png" alt="Español">
+            </button>
+            <button id="idiomaBtnEN" class="idioma-btn">
+                <img src="img/UK.png" alt="English">
+            </button>
+        </nav>
+    </header>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="catalogo">
+        <h2 id="exploralosvehiculos" class="titulo-catalogo">Explora los Vehículos</h2>
+
+        <div class="categorias">
+            <a id="autosElectricos" href="#" class="seleccionado">Autos Eléctricos</a>
+            <a id="AutosDeportivos" href="Catalogodeportivo.html">Autos Deportivos</a>
+            <a id="Camionetas" href="catalogo.html" >Camionetas</a>
+        </div>
+
+        <div class="linea"></div>
+
+        <section class="tarjetas">
+            <article class="tarjeta">
+                <img src="img/prius.jpg" alt="Prius">
+                <div class="info">
+                    <span class="año">2026</span>
+                    <h3 id="Prius">Prius</h3>
+                    <p id="Hecha">Dinamica con o sin movimiento.</p>
+                    <span class="precio">$28,550</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explorar" href="explorar_prius.html" class="btn">Explorar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/corolla.png" alt="Corolla Hybrid">
+                <div class="info">
+                    <span class="año">2026</span>
+                    <h3>Corolla Hybrid</h3>
+                    <p id="Equipada">Alegria y felicidad en cada viaje.</p>
+                    <span class="precio">$24,975</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explora2" href="#" class="btn">Explorar ></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/bz.jpg" alt="bZ">
+                <div class="info">
+                    <span class="año">2026</span>
+                    <h3 id="bZ">bZ</h3>
+                    <p id="Hecha2">Hecha para moverte. Diseñada para electrizarte.</p>
+                    <span class="precio">$34,900</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explorar3" href="#" class="btn">Explorar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/camry.jpg" alt="Camry">
+                <div class="info">
+                    <span class="año">2026</span>
+                    <h3 id="Camry">Camry</h3>
+                    <p id="Equipada2">Siente la emocion cada dia en estilo.</p>
+                    <span class="precio">$29,300</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explora4" href="#" class="btn">Explorar ></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <div class="transition-overlay"></div>
+    <script src="catalogoelectico.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Driver</title>
+
+    <link rel="stylesheet" href="recursos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <img src="img/SMART_DRIVER__3_-removebg-preview.png" alt="Smart Driver">
+            <h1>SMARTDRIVER</h1>
+        </div>
+
+        <nav class="menu">
+            <a id="navInicio" href="welcome.html">INICIO</a>
+            <a id="navCatalogo" href="catalogo.html">CATÁLOGO</a>
+            <a id="navRecursos" href="Recursos.html">RECURSOS</a>
+            <a id="navContacto" href="#contacto">CONTACTO</a>
+
+            <button id="idiomaBtnEs" class="idioma-btn">
+                <img src="img/ESP.png" alt="Español">
+            </button>
+
+            <button id="idiomaBtnEN" class="idioma-btn">
+                <img src="img/UK.png" alt="English">
+            </button>
+        </nav>
+
+    </header>
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-contenido">
+            <h1 id="recursos">RECURSOS AUTOMOTRICES</h1>
+            <p id="texto">
+                Servicios, herramientas y conocimientos para cualquier conductor.
+            </p>
+            <div  class="barra_de_busqueda">
+                <span class="icono-busqueda"></span>
+                <input 
+                  type="text"
+                  id="busqueda"
+                  placeholder="busca talleres,trámites, servicios o articulos...">
+                  <button id="btnBuscar">
+                     
+                  </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ================= ACCESOS RAPIDOS ================= -->
+
+    <section class="accesos-rapidos">
+
+    <div class="titulo-seccion">
+        <img src="img/Iconoacceso.png" class="icono-acceso">
+
+        <h2>ACCESOS RÁPIDOS</h2>
+    </div>
+    
+    <div class="grid-accesos">
+
+        <div class="card" id="cardTalleres">
+            <div class="icono azul">
+                <img src="img/imagen 1.png" alt="Talleres">
+            </div>
+            <h3 id="talleres">TALLERES</h3>
+            <p id="texto2">Encuentra talleres cerca de ti</p>
+            <span class="linea azul"></span>
+        </div>
+
+        <div class="card" id="cardConcesionarios">
+            <div class="icono verde">
+                <img src="img/imagen 2.png" alt="Concesionarios">
+            </div>
+            <h3 id="concesionarios">CONCESIONARIOS</h3>
+            <p id="texto3">Explora marcas y concesionarios</p>
+            <span class="linea verde"></span>
+        </div>
+
+        <div class="card" id="cardGasolineras">
+            <div class="icono naranja">
+                <img src="img/imagen 3.png" alt="Gasolineras">
+            </div>
+            <h3 id="gasolineras">GASOLINERAS</h3>
+            <p id="texto4">Ubicaciones y precios de combustible</p>
+            <span class="linea naranja"></span>
+        </div>
+
+        <div class="card" id="cardCentros">
+            <div class="icono morado">
+                <img src="img/imagen 4.png" alt="Centros de carga">
+            </div>
+            <h3 id="centros">CENTROS DE CARGA</h3>
+            <p id="texto5">Estaciones de carga para vehículos eléctricos</p>
+            <span class="linea morado"></span>
+        </div>
+
+        <div class="card" id="cardLlantas">
+            <div class="icono amarillo">
+                <img src="img/imagen 5.png" alt="Llantas y repuestos">
+            </div>
+            <h3 id="Llantas">LLANTAS Y REPUESTOS</h3>
+            <p id="texto6">Tiendas y servicios especializados</p>
+            <span class="linea amarillo"></span>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= APRENDE ================= -->
+
+    <section class="aprende-vehiculos">
+
+        <div class="titulo-seccion">
+            <div class="icono-titulo"></div>
+            <h3 id="aprende">APRENDE SOBRE VEHÍCULOS</h3>
+        </div>
+    
+    </section>
+
+        <div class="contenedor-aprende">
+
+            <div class="card-aprende mantenimiento">
+                <div class="overlay"></div>
+                <div class="card-contenido">
+                    <h3 id="mantenimiento">Mantenimiento Básico</h3>
+                </div>
+            </div>
+
+            <div class="card-aprende compra">
+                <div class="overlay"></div>
+                <div class="card-contenido">
+                    <h3 id="compra">Compra y Venta</h3>
+                </div>
+            </div>
+        </div>
+
+<!-- SOLO ESTA TARJETA DE VIDEO -->
+<div class="card-video">
+
+    <video class="video-fondo" autoplay muted loop playsinline>
+        <source src="img/video1.mp4" type="video/mp4">
+    </video>
+</div>
+    <div class="play-btn"></div>
+
+            <div class="card-aprende conduccion">
+                <div class="overlay"></div>
+                <div class="card-contenido">
+                    <h3 id="conduccion">Conducción y Seguridad</h3>
+                </div>
+            </div>
+
+            <div class="card-aprende leyes">
+                <div class="overlay"></div>
+                <div class="card-contenido">
+                    <h3 id="leyes">Leyes y Normativas</h3>
+                </div>
+            </div>
+    <div class="card-video">
+
+    <video class="video-fondo" autoplay muted loop playsinline>
+        <source src="img/video2.mp4" type="video/mp4">
+    </video>
+
+    <div class="play-btn"></div>
+</div>
+</div>
+    </section>
+    <script src="Recursos.js"></script>
+</body>
+</html>

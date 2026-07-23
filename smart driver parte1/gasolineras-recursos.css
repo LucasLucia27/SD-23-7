@@ -1,0 +1,541 @@
+/* ===========================
+   RESET GENERAL
+   Elimina márgenes por defecto
+   =========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+/* ===========================
+   ESTILOS DEL BODY
+   Color de fondo de la página
+   =========================== */
+
+body{
+    background:#F4F5FF;
+}
+
+
+/* ===========================
+   HEADER Y MENÚ
+   =========================== */
+
+header{
+     background:#062255;
+    height:78px;
+    padding:0 35px;
+}
+
+nav{
+     width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:55px;
+}
+
+.logo h2{
+     color:white !important;
+}
+
+/* Menú de navegación */
+.menu{
+     margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+/* Enlaces del menú */
+.menu a{
+    text-decoration:none;
+    color:#9EA7B8;
+    font-weight:600;
+    transition:0.3s;
+}
+
+/* Página activa */
+.menu a.activo{
+    color:white;
+}
+
+/* Efecto al pasar el mouse */
+.menu a:hover{
+    color:white;
+}
+
+/* Botones de idioma */
+.idioma-btn{
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+}
+
+.idioma-btn img{
+    width:25px;
+    height:20px;
+    border-radius:50%;
+}
+/* ===========================
+   BANNER PRINCIPAL
+   =========================== */
+
+.banner{
+
+    height: 180px;
+
+    background:
+        linear-gradient(
+            to right,
+            #000C74 0%,
+            rgba(0,12,116,0.98) 30%,
+            rgba(0,12,116,0.85) 55%,
+            rgba(0,12,116,0.45) 80%,
+            rgba(0,12,116,0.10) 100%
+        ),
+        url("img/Banner\ gasolineria.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-texto{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    color:white;
+
+}
+
+.banner-texto img{
+    width:95px;
+}
+
+.banner h1{
+    font-size:42px;
+}
+
+.banner p{
+    font-size:20px;
+}
+
+
+/* ===========================
+   BARRA DE BÚSQUEDA
+   =========================== */
+
+.busqueda{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:30px 60px;
+
+    gap:25px;
+
+}
+
+/* Botones laterales */
+
+.ubicacion,
+.miubicacion{
+
+    background:white;
+
+    border:none;
+
+    padding:18px 30px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+}
+
+/* Botón azul */
+
+.miubicacion{
+
+    background:#162B7C;
+    color:white;
+}
+
+/* Caja del buscador */
+
+.search{
+
+    flex:1;
+    display:flex;
+    background:white;
+    border-radius:40px;
+    overflow:hidden;
+}
+
+/* Campo de texto */
+
+.search input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:20px;
+}
+
+/* Botón de búsqueda */
+
+.search button{
+
+    width:90px;
+
+    border:none;
+
+    background:#34495e;
+
+    color:white;
+
+}
+
+
+/* ===========================
+   CONTENEDOR PRINCIPAL
+   =========================== */
+
+.contenedor{
+
+    display:flex;
+
+    gap:40px;
+
+    padding:20px 60px;
+
+}
+
+
+/* ===========================
+   PANEL DE FILTROS
+   =========================== */
+
+.filtros{
+
+    width:320px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+.filtros h2{
+
+    color:#162B7C;
+
+    margin-bottom:20px;
+
+}
+
+.filtros label{
+
+    display:block;
+
+    margin:20px 0;
+
+}
+
+.filtros input{
+
+    width:22px;
+
+    height:22px;
+
+}
+
+
+/* ===========================
+   MAPA
+   =========================== */
+
+.mapa{
+
+    flex:1;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:20px;
+
+}
+
+.mapa iframe{
+
+    width:100%;
+
+    height:650px;
+
+    border:none;
+
+}
+/*==================================
+      LISTA DE TALLERES
+==================================*/
+
+.lista-gasolineras{
+
+    display:flex;
+    gap:40px;
+    padding:20px 60px 60px;
+
+}
+
+
+/*=========================
+        FILTROS
+=========================*/
+
+.filtro-calificacion{
+
+    width:320px;
+    background:white;
+    border-radius:22px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.filtro-calificacion h2{
+
+    color:#152873;
+    margin-bottom:30px;
+    font-size:34px;
+
+}
+
+.filtro-calificacion label{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin:24px 0;
+    cursor:pointer;
+
+}
+
+.filtro-calificacion input{
+
+    width:28px;
+    height:28px;
+    cursor:pointer;
+
+}
+
+.filtro-calificacion span{
+
+    color:#FFC533;
+    font-size:40px;
+    letter-spacing:4px;
+
+}
+
+#limpiarFiltros{
+
+    width:100%;
+    margin-top:25px;
+    padding:18px;
+
+    background:white;
+
+    border:2px solid #3357B7;
+
+    color:#2B5CB8;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#limpiarFiltros:hover{
+
+    background:#2B5CB8;
+    color:white;
+
+}
+
+
+/*=========================
+        TARJETAS
+=========================*/
+
+.gasolineras{
+
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+
+}
+
+.card-gasolinera{
+
+    display:flex;
+    align-items:center;
+
+    gap:25px;
+
+    background:white;
+
+    padding:18px 22px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+.card-taller:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.card-taller img{
+
+    width:185px;
+    height:185px;
+    border-radius:16px;
+    object-fit:cover;
+
+}
+
+.info{
+
+    flex:1;
+
+}
+
+.info h2{
+
+    color:#152873;
+    font-size:30px;
+    margin-bottom:8px;
+
+}
+
+.rating{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+    font-size:20px;
+
+}
+
+.estrellas{
+
+    color:#FFC533;
+    font-size:28px;
+    letter-spacing:2px;
+
+}
+
+.info p{
+
+    font-size:19px;
+    color:#223;
+    margin:6px 0;
+
+}
+
+.info h3{
+
+    margin-top:10px;
+    color:#26A53B;
+    font-size:19px;
+
+}
+
+/* =====================================
+   CONTACTO
+===================================== */
+
+.contacto{
+    background-image: url(img/footer.png);
+    display: flex;
+    color: white;
+    padding: 80px 5%;
+}
+
+.contacto-contenido{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.contacto h2{
+    font-family:sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contacto-contenido > p{
+    max-width: 700px;
+    margin: auto;
+}
+
+.contacto-info{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+.contacto-item{
+    background: rgba(255,255,255,.08);
+
+    padding: 25px;
+    border-radius: 15px;
+
+    min-width: 250px;
+}
+
+.contacto-item h3{
+    margin-bottom: 10px;
+}
+h3{
+    font-family: sans-serif;
+}
+p{
+    font-family: sans-serif;
+}

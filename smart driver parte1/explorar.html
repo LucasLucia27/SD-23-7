@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartDriver | Sequoia 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+
+    <link rel="stylesheet" href="explorar.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img src="img/SMART_DRIVER__3_-removebg-preview.png" alt="SmartDriver">
+
+        <h2>SMARTDRIVER</h2>
+
+    </div>
+
+    <nav>
+
+        <a href="welcome.html">INICIO</a>
+
+        <a href="#" class="activo">CATÁLOGO</a>
+
+        <a href="Recursos.html">RECURSOS</a>
+
+        <a href="#">CONTACTO</a>
+
+        <button id="idiomaBtnEs" class="idioma-btn">
+            <img src="img/ESP.png" alt="Español">
+        </button>
+
+        <button id="idiomaBtnEN" class="idioma-btn">
+            <img src="img/UK.png" alt="English">
+        </button>
+
+    </nav>
+
+</header>
+
+<section class="hero-video" id="inicio">
+
+    <video class="video-fondo" autoplay muted loop playsinline>
+
+        <source src="img/video1.mp4" type="video/mp4">
+
+    </video>
+
+    <div class="overlay-video">
+
+        <div>
+            <div class="boton-volver">
+                <button class="btn-retroceso" onclick="history.back()">
+                     ←
+                </button>
+            </div>
+
+            <h2 id="titulo-sequoia">
+                SEQUOIA 2026
+            </h2>
+
+            <p class="p">
+                MSRP Inicial: $65,025
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="galeria">
+
+    <h1>
+        DESDE LA CIUDAD HASTA TODO EL PAÍS.
+    </h1>
+
+</section>
+
+<div class="car-viewer">
+
+    <img
+        id="carImage"
+        src="img/sequoiagris.png"
+        alt="Toyota Sequoia">
+        <h3> < Cambia el color > </h3>
+
+    <div class="color-picker">
+
+        <button
+            class="color active"
+            style="background:#d9d9d9;"
+            onclick="changeColor('img/sequoiagris.png', this)">
+        </button>
+
+        <button
+            class="color"
+            style="background:#0e1656;"
+            onclick="changeColor('img/sequoiaazul.png', this)">
+        </button>
+
+        <button
+            class="color"
+            style="background: #686868;"
+            onclick="changeColor('img/sequoia.png', this)">
+        </button>
+
+        <button
+            class="color"
+            style="background:#51c3c3;"
+            onclick="changeColor('img/sequoiaverdeclaro.png', this)">
+        </button>
+
+        <button
+            class="color"
+            style="background:#744926;"
+            onclick="changeColor('img/sequoiamarron.png', this)">
+        </button>
+
+        <button
+            class="color"
+            style="background:#d53131;"
+            onclick="changeColor('img/sequoiarojo.png', this)">
+        </button>
+
+        <button
+            class="color"
+            style="background:#f8f8f8;"
+            onclick="changeColor('img/sequoiablanco.png', this)">
+        </button>
+
+    </div>
+
+</div>
+    
+<section class="galeria">
+
+    <h1>SEQUOIA 2026</h1>
+
+    <h2>
+        Naturalmente fuerte por dentro y por fuera.
+    </h2>
+
+    <div class="tabs">
+
+        <button class="tab active" data-tab="interior">
+            INTERIOR
+        </button>
+
+        <button class="tab" data-tab="exterior">
+            EXTERIOR
+        </button>
+
+        <button class="tab" data-tab="360">
+            VISTA 360°
+        </button>
+
+    </div>
+
+    <!-- ==========================
+            INTERIOR
+    =========================== -->
+
+    <div class="contenido active" id="interior">
+
+        <div class="grid">
+
+            <div class="izquierda">
+
+                <div class="grande">
+                    <img src="img/interior-sequoia.png" alt="Interior 1">
+                </div>
+
+                <div class="abajo">
+
+                    <div class="pequeña">
+                        <img src="img/interior-sequoia2.png" alt="Interior 2">
+                    </div>
+
+                    <div class="pequeña">
+                        <img src="img/interior-sequoia3.png" alt="Interior 3">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="derecha">
+
+                <img src="img/interior-sequoia4.png" alt="Interior 4">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================
+            EXTERIOR
+    =========================== -->
+
+    <div class="contenido" id="exterior">
+
+        <div class="grid">
+
+            <div class="izquierda">
+
+                <div class="grande">
+                    <img src="img/exterior-sequoia.png" alt="Exterior 1">
+                </div>
+
+                <div class="abajo">
+
+                    <div class="pequeña">
+                        <img src="img/exterior-sequoia2.png" alt="Exterior 2">
+                    </div>
+
+                    <div class="pequeña">
+                        <img src="img/exterior-sequoia3.png" alt="Exterior 3">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="derecha">
+
+                <img src="img/exterior-sequoia4.png" alt="Exterior 4">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ==========================
+            VISTA 360°
+    =========================== -->
+
+    <div class="contenido" id="360">
+
+        <h3>VISTA 360°</h3>
+
+        <div class="viewer360">
+
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =====================
+         SECTION 4 - CONTACTO
+    ====================== -->
+    <section class="contacto" id="contacto">
+
+        <div class="contacto-contenido">
+
+            <h2 id="tituloContacto">CONTACTO</h2>
+
+            <p id="textoContacto">
+                ¿Tienes preguntas o deseas más información sobre nuestros
+                vehículos y servicios?
+            </p>
+
+            <div class="contacto-info">
+
+                <div class="contacto-item">
+                    <h3 id="direccion">📍 Dirección</h3>
+                    <p>Ciudad de Panamá, Panamá</p>
+                </div>
+
+                <div class="contacto-item">
+                    <h3 id="telefono">📞 Teléfono</h3>
+                    <p>+507 6000-0000</p>
+                </div>
+
+                <div class="contacto-item">
+                    <h3 id="correo">✉️ Correo</h3>
+                    <p>info@smartdriver.com</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<script src="explorar.js"></script>
+</body>
+</html>

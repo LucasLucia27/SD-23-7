@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Catalogo.css">
+    <link rel="icon" type="image/png" href="img/Favicon.png">
+    <title>Catálogo</title>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+
+    <header>
+        <div class="logo">
+            <img src="img/SMART_DRIVER__3_-removebg-preview.png" alt="Smart Driver">
+            <h1 id="titulo-catalogo">SMARTDRIVER</h1>
+        </div>
+
+        <nav class="menu">
+            <a id="navInicio" href="welcome.html" class="page-link">INICIO</a>
+            <a id="navCatalogo" href="#" class="page-link">CATÁLOGO</a>
+            <a id="navRecursos" href="Recursos.html" class="page-link">RECURSOS</a>
+            <a id="navContacto" href="#contacto" class="page-link">CONTACTO</a>
+            <button id="idiomaBtnEs" class="idioma-btn">
+                <img src="img/ESP.png" alt="Español">
+            </button>
+            <button id="idiomaBtnEN" class="idioma-btn">
+                <img src="img/UK.png" alt="English">
+            </button>
+        </nav>
+    </header>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="catalogo">
+        <h2 id="Exploralosvehículos" class="titulo-catalogo">Explora los Vehículos</h2>
+
+        <div class="categorias">
+            <a id="autosEléctricos" href="catalogoelectricos.html">Autos Eléctricos</a>
+            <a id="AutosDeportivos" href="catalogodeportivo.html">Autos Deportivos</a>
+            <a id="Camionetas" href="#" class="seleccionado">Camionetas</a>
+        </div>
+
+        <div class="linea"></div>
+
+        <section class="tarjetas">
+            <article class="tarjeta">
+                <img src="img/landi-cruiser.png" alt="Land Cruiser">
+                <div class="info">
+                    <span class="anio">2027</span>
+                    <h3 id="Landi-cruiser">Land Cruiser</h3>
+                    <p id="Hecha">Hecha con el espíritu de la original y diseñada con el propósito del presente.</p>
+                    <span class="precio">$57,880</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explorar" href="#" class="btn">Explorar</a>
+                        
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/sequoia.jpeg" alt="Sequoia">
+                <div class="info">
+                    <span class="anio">2026</span>
+                    <h3>Sequoia</h3>
+                    <p id="Equipada">Equipada y capacitada para dominar.</p>
+                    <span class="Precio">$65,025</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explora" href="explorar.html" class="btn">Explorar ></a>
+                      
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/tundra.jpg" alt="Toyota tundra Tundra">
+                <div class="info">
+                    <span class="anio">2027</span>
+                    <h3 id="Toyota-tundra">Tundra</h3>
+                    <p id="Hecha2">Potentemente equipada para todos tus días</p>
+                    <span class="precio">$41,260</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explorar2" href="#" class="btn">Explorar</a>
+                        
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/RAV4.jpg" alt="RAV4">
+                <div class="info">
+                    <span class="anio">2026</span>
+                    <h3>RAV4</h3>
+                    <p id="Equipada2">una SUV cómoda, segura y eficiente, ideal para la ciudad y los viajes gracias a su espacio y versatilidad.</p>
+                    <span class="Precio">$31,900</span>
+                    <small>MSRP inicial</small>
+                    <div class="botones">
+                        <a id="Explora2" href="#" class="btn">Explorar ></a>
+                        
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <div class="transition-overlay"></div>
+    <script src="Catalogo.js"></script>
+</body>
+</html>

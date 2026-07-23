@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.splash-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo{
+    width:500px;
+    max-width:90%;
+    animation: intro 3s ease-in-out forwards;
+}
+
+@keyframes intro{
+
+    0%{
+        transform: scale(0.3) rotate(-10deg);
+        opacity:0;
+    }
+
+    25%{
+        transform: scale(1.1) rotate(5deg);
+        opacity:1;
+    }
+
+    60%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.15);
+        opacity:1;
+    }
+
+}
